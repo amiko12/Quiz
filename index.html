@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="start" id="start">
+            <h1 class="starth1">Do You Want Start Quiz?</h1>
+            <button class="front" id="btn" onclick="display()">Click Here</button>
+    </div>
+    <div class="question" id="quiz" style="display: flex;  
+                                justify-content: space-around;
+                                text-align: center;
+                                margin-top: 240px;
+                                width: 80%;
+                                display: none;"
+                                >
+        <div class="divli">
+            <ul>
+                <li class="" id="0" onclick="change()">First Question</li>
+                <li id="1" >Second Question</li>
+                <li id="2" >Third Question</li>
+                <li id="3" >Forth Question</li>
+                <li id="4" >Fifth Question</li>
+                <li id="5">Sixth Question</li>
+                <li id="6" >Seventh Question</li>
+                <li id="7" >Eighth Question</li>
+                <li id="8" >Ninth Question</li>
+                <li id="9" >Tenth Question</li>
+                
+            </ul>
+        </div>
+
+        <div>
+
+            <h1 id="h1">№1 When you are in a community you usually prefer
+            </h1>
+        
+            <div class="radio1display">
+                <input type="radio" id="check1" value="1" name="radio">
+                <label for="name" class="label" id="label1">A) participate in a general conversation or</label>
+
+            </div>
+            <div class="radio2display">
+                <input type="radio" id="check2" value="1" name="radio">
+                <label for="name" class="label" id="label2">B) talking with each separately</label>
+            </div>
+                
+            <div class="buttons">
+                <button class="clear" >Clear</button>
+                <button class="back"  onclick="before()">Before Question</button>
+                <button class="front" onclick="change()" >Next Question</button>
+                <button class="finishing">Finish</button>
+            </div>
+            <p id="p"></p>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
